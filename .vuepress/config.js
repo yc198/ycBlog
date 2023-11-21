@@ -2,6 +2,11 @@ module.exports = {
   "title": "yc",
   "description": "",
   "dest": "public",
+  "locales": {
+    "/" : {
+      lang : "zh-CN"
+    }
+  },
   "head": [
     [
       "link",
@@ -32,7 +37,7 @@ module.exports = {
         "icon": "reco-date"
       },
       {
-        "text": "Docs",
+        "text": "文档",
         "icon": "reco-message",
         "items": [
           {
@@ -42,7 +47,7 @@ module.exports = {
         ]
       },
       {
-        "text": "Contact",
+        "text": "其他链接",
         "icon": "reco-message",
         "items": [
           {
@@ -74,16 +79,9 @@ module.exports = {
     },
     "friendLink": [
       {
-        "title": "午后南杂",
-        "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1156743527@qq.com",
-        "link": "https://www.recoluan.com"
-      },
-      {
-        "title": "yc",
-        "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-        "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        "link": "https://vuepress-theme-reco.recoluan.com"
+        "title": "vuepress-theme-reco",
+        "desc": "本博客由vuepress-theme-reco驱动",
+        "link": "https://vuepress-theme-reco.recoluan.com/"
       }
     ],
     "logo": "/avatar.jpg",
@@ -93,7 +91,7 @@ module.exports = {
     "author": "yc",
     "authorAvatar": "/avatar.jpg",
     "record": "xxxx",
-    "startYear": "2017"
+    "startYear": "2023"
   },
   "markdown": {
     "lineNumbers": true

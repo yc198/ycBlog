@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: yc
-tagline: 傻狗小方
+tagline: 会好，迟早
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
