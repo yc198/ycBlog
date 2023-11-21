@@ -84,12 +84,12 @@ module.exports = {
         "link": "https://vuepress-theme-reco.recoluan.com/"
       }
     ],
-    "logo": "/avatar.jpg",
+    "logo": "/avatar.png",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "yc",
-    "authorAvatar": "/avatar.jpg",
+    "authorAvatar": "/avatar.png",
     "record": "xxxx",
     "startYear": "2023"
   },
