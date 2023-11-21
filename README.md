@@ -9,7 +9,7 @@ tagline: 会好，迟早
 #   display: block,
 #   margin: '9rem auto 2rem',
 #   background: '#fff',
-#   borderRadius: '1rem',
+#   borderRadius: '1rem'
 # }
 bgImageStyle: {
   height: '450px'
