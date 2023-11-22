@@ -4,7 +4,7 @@ on:
   push:
     branches:
       # master分支，你也可以改成其他分支
-      - master
+      - develop
 jobs:
   build:
     # runs-on 指定job任务运行所需要的虚拟机环境(必填字段)
@@ -31,7 +31,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
           # 私钥
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.AUTO_REFRESH_BLOG_BY_GITHUB_ACTION }}
           # scp参数
           ARGS: "-avzr --delete"
           # 源目录，编译后生成的文件目录
@@ -41,4 +41,4 @@ jobs:
           # 用户
           REMOTE_USER: "root"
           # 目标地址 你在服务器上部署代码的地方
-          TARGET: "/root/web/vue-drag-demo"
+          TARGET: "/usr/local/nginx/html"
