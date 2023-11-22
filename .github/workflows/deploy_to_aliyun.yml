@@ -38,7 +38,7 @@ jobs:
           SERVER_PORT: "22"
           SOURCE: "./public"
           # 服务器ip：换成你的服务器IP
-          REMOTE_HOST: "47.120.48.61"
+          REMOTE_HOST: ${{ secrets.IP }}
           # 用户
           REMOTE_USER: "root"
           # 目标地址 你在服务器上部署代码的地方
