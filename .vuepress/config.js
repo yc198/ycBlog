@@ -60,11 +60,9 @@ module.exports = {
     ],
     "sidebar": {
       "/docs/theme-reco/": [
-        "",
         "theme",
         "plugin",
-        "api",
-        "uniapp"
+        "api"
       ]
     },
     "type": "blog",

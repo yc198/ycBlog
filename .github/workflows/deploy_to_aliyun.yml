@@ -1,34 +1,44 @@
-name: Deploy Blog
-
+name: Build app and deploy to aliyun
 on:
+  #监听push操作
   push:
     branches:
+      # master分支，你也可以改成其他分支
       - develop
-
 jobs:
-  deploy:
+  build:
+    # runs-on 指定job任务运行所需要的虚拟机环境(必填字段)
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      # 获取源码
+      - name: Checkout
+        # 使用action库  actions/checkout获取源码
+        uses: actions/checkout@master
+      # 安装Node13
+      - name: use Node.js 13.2.0
+        # 使用action库  actions/setup-node安装node
+        uses: actions/setup-node@v1
         with:
-          node-version: '14'
-
-      - name: Install Dependencies
+          node-version: 13.2.0
+      # 安装依赖
+      - name: npm install
         run: npm install
-
-      - name: Build Blog
+      # 打包
+      - name: npm build
         run: npm run build
-
-      - name: Deploy to Server
-        uses: AEnterprise/rsync-deploy@v1.0
-        with:
-          switches: -avzr --delete
-          remote_path: /path/to/your/remote/directory
-          remote_host: ${{ secrets.REMOTE_HOST }}
-          remote_user: ${{ secrets.REMOTE_USER }}
-          remote_key: ${{ secrets.REMOTE_KEY }}
+      # 部署到阿里云
+      - name: Deploy to Aliyun
+        uses: easingthemes/ssh-deploy@v2.1.1
+        env:
+          # 私钥
+          SSH_PRIVATE_KEY: ${{ secrets.AUTO_REFRESH_BLOG_BY_GITHUB_ACTION }}
+          # scp参数
+          ARGS: "-avzr --delete"
+          # 源目录，编译后生成的文件目录
+          SOURCE: "./public"
+          # 服务器ip：换成你的服务器IP
+          REMOTE_HOST: "47.120.48.61"
+          # 用户
+          REMOTE_USER: "root"
+          # 目标地址 你在服务器上部署代码的地方
+          TARGET: "/usr/local/nginx/html"
