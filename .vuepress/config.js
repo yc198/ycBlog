@@ -63,7 +63,8 @@ module.exports = {
         "",
         "theme",
         "plugin",
-        "api"
+        "api",
+        "uniapp"
       ]
     },
     "type": "blog",
