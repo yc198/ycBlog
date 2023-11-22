@@ -34,6 +34,6 @@ jobs:
           ARGS: -avz --delete --exclude='*.pyc' # rsync参数，排除.pyc文件
           SERVER_PORT: "22" # SSH端口
           FOLDER: ./public # 要推送的文件夹，路径相对于代码仓库的根目录，视情况替换为自己的文件夹路径
-          SERVER_IP: ${{47.120.48.61}} # 引用配置，服务器的host名（IP或者域名domain.com）
+          SERVER_IP: ${{secrets.IP}} # 引用配置，服务器的host名（IP或者域名domain.com）
           USERNAME: root # 引用配置，服务器登录名
           SERVER_DESTINATION: /usr/local/nginx/html # 部署到目标文件夹
