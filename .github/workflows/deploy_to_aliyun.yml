@@ -15,11 +15,11 @@ jobs:
         # 使用action库  actions/checkout获取源码
         uses: actions/checkout@master
       # 安装Node13
-      - name: use Node.js 13.2.0
+      - name: use Node.js 16.20.2
         # 使用action库  actions/setup-node安装node
         uses: actions/setup-node@v1
         with:
-          node-version: 13.2.0
+          node-version: 16.20.2
       # 安装依赖
       - name: npm install
         run: npm install
@@ -35,9 +35,10 @@ jobs:
           # scp参数
           ARGS: "-avzr --delete"
           # 源目录，编译后生成的文件目录
+          SERVER_PORT: "22"
           SOURCE: "./public"
           # 服务器ip：换成你的服务器IP
-          REMOTE_HOST: "47.120.48.61"
+          REMOTE_HOST: ${{ secrets.IP }}
           # 用户
           REMOTE_USER: "root"
           # 目标地址 你在服务器上部署代码的地方
