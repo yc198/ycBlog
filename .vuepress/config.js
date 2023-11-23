@@ -25,6 +25,7 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
+    subSidebar: 'auto',
     "nav": [
       {
         "text": "主页",
@@ -60,9 +61,20 @@ module.exports = {
     ],
     "sidebar": {
       "/docs/theme-reco/": [
-        "theme",
-        "plugin",
-        "api"
+        // {
+        //   title: '一些文件',    // 标题信息
+        //   collapsable: true,   // 是否可折叠
+        //   children: [        // 该块内容对应的所有链接
+        //     "",    
+        //     "theme",  
+        //     "plugin", 
+        //     "api"    
+        //   ]
+        // }
+        "",    
+        "theme",  
+        "plugin", 
+        "api"    
       ]
     },
     "type": "blog",
@@ -81,6 +93,11 @@ module.exports = {
         "title": "vuepress-theme-reco",
         "desc": "本博客由vuepress-theme-reco驱动",
         "link": "https://vuepress-theme-reco.recoluan.com/"
+      },
+      {
+        "title": "sundaycloud",
+        "desc": "sundaycloud",
+        "link": "https://sundaycloud.top/"
       }
     ],
     "logo": "/avatar.png",
@@ -95,4 +112,5 @@ module.exports = {
   "markdown": {
     "lineNumbers": true
   }
+  
 }

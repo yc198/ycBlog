@@ -1,5 +1,5 @@
 ---
-title: uniapp
+title: 对象传参
 date: 2023-11-22
 sidebar: 'auto'
 tags:
@@ -14,7 +14,7 @@ categories:
 
 ### 1.编码(`encodeURIComponent`)
 ```js
-    let str = JSON.stringify(deviceInfo)
+    let str = JSON.stringify(this.searchResults)
     // 正常解码，编码时对所有“%”进行单独处理，手动转换为“%25”
     str = str.replace(/%/g, '%25')
 	let query = encodeURIComponent(str)
