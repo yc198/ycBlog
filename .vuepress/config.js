@@ -98,6 +98,11 @@ module.exports = {
         "title": "sundaycloud",
         "desc": "sundaycloud",
         "link": "https://sundaycloud.top/"
+      },
+      {
+        "title": "XiaoFang",
+        "desc": "XiaoFang",
+        "link": "http://47.120.49.133/"
       }
     ],
     "logo": "/avatar.png",
