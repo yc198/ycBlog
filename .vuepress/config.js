@@ -111,7 +111,8 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "yc",
     "authorAvatar": "/avatar.png",
-    "record": "xxxx",
+    "record": "湘ICP备2023033232号-1",
+    "recordLink":"https://beian.miit.gov.cn/",
     "startYear": "2023"
   },
   "markdown": {
