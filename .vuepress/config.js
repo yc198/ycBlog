@@ -93,17 +93,17 @@ module.exports = {
         "title": "vuepress-theme-reco",
         "desc": "本博客由vuepress-theme-reco驱动",
         "link": "https://vuepress-theme-reco.recoluan.com/"
-      },
-      {
-        "title": "sundaycloud",
-        "desc": "sundaycloud",
-        "link": "https://sundaycloud.top/"
-      },
-      {
-        "title": "XiaoFang",
-        "desc": "XiaoFang",
-        "link": "http://47.120.49.133/"
       }
+      // {
+      //   "title": "sundaycloud",
+      //   "desc": "sundaycloud",
+      //   "link": "https://sundaycloud.top/"
+      // },
+      // {
+      //   "title": "XiaoFang",
+      //   "desc": "XiaoFang",
+      //   "link": "http://47.120.49.133/"
+      // }
     ],
     "logo": "/avatar.png",
     "search": true,
