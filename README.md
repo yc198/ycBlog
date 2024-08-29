@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: yc
+heroText: Yc blog
 tagline:  
 # heroImage: /hero.png
 # heroImageStyle: {

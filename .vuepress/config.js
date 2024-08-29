@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "yc",
+  "title": "Yc blog",
   "description": "",
   "dest": "public",
   "locales": {
